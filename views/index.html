@@ -1,0 +1,51 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="head">
+        Image Basejump
+      </h1>
+    </header>
+
+    <main>
+      <p>
+        This is a URL shortener. Enter your query and if it is a valid unix code or a date the app will return a JSON object with the query-date in unix code as well as a natural date.
+      </p>
+      <p>
+        <p><b>Example entry of an url into the database:</b></p>
+        <a href="https://icy-detail.glitch.me/new/https://www.google.com/">https://icy-detail.glitch.me/new/https://www.google.com/</a><br>
+      </p>
+      <p>
+        <p><b>Example output:</b></p>
+        {"original_url":"https://www.google.com/","shortened_url":"https://icy-detail.glitch.me/3"}
+      </p>
+      <p>
+        <p><b>Example usage:</b></p>
+        <a href="https://icy-detail.glitch.me/3/">https://icy-detail.glitch.me/3/</a><br>
+      </p>
+      <p>
+        <p><b>Will redirect to:</b></p>
+        <a href="https://www.google.com/">https://www.google.com/</a><br>
+      </p>
+    </main>
+
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+
+  </body>
+</html>
